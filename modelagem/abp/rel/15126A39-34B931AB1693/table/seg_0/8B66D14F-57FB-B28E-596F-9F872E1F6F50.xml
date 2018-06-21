@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B66D14F-57FB-B28E-596F-9F872E1F6F50" name="RESERVAS">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:30:15 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_RESERVA" id="7F0F191A-3235-74D6-4117-55AE8434322A">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:42:29 UTC</createdTime>
+<comment>Identificador da reserva.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LOCAL" id="088B19CC-03E0-4B8A-574D-CAC5463DA5B9">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:30:31 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C06F4964-D0EC-9ABC-D31F-8C2CA2F0532A" referredColumn="750EEFDA-3F2A-EEF0-236E-334EFA1041F8"/>
+</associations>
+</Column>
+<Column name="ID_PALETE" id="5BA1BA92-E600-401E-50D1-453DC2692617">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:30:40 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F97F3922-860C-FBE2-8ADF-F6D83F4D1E1C" referredColumn="D28ACA74-52E3-8128-30C9-C85E0E91C87E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C929DE49-BDA2-1F5B-6106-0352D210F0ED" name="RESERVAS_PK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:31:21 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="088B19CC-03E0-4B8A-574D-CAC5463DA5B9"/>
+<colUsage columnID="5BA1BA92-E600-401E-50D1-453DC2692617"/>
+<colUsage columnID="7F0F191A-3235-74D6-4117-55AE8434322A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D2FB64E-5771-719C-9E07-2E56BFAE55CF" name="RESERVAS_LOCAIS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:31:26 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="088B19CC-03E0-4B8A-574D-CAC5463DA5B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8373B0CB-3923-123E-9027-E7C12DF6EA74" name="RESERVAS_PALETES_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:31:55 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BA1BA92-E600-401E-50D1-453DC2692617"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

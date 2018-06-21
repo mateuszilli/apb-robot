@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2666932C-6E9D-69B6-58B2-9CC8E60F7FDD" name="MUDANCAS">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:06:08 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MUDANCA" id="1F5719E7-C47D-A32B-0313-CB1F70811363">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:07:32 UTC</createdTime>
+<comment>Identificador da mudança.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PALETE" id="37324BA3-0165-B2DC-95CF-130517C3F2F1">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:14:03 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9136FD3-F322-4918-36B9-6D85CFEB6751" referredColumn="D28ACA74-52E3-8128-30C9-C85E0E91C87E"/>
+</associations>
+</Column>
+<Column name="ID_LOCAL_ATUAL" id="173DCB6E-2275-E45F-C817-4628724C274A">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:11:00 UTC</createdTime>
+<comment>Identificador do local atual.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D75D98A2-E61E-D4B0-F0DF-EDFBD91ACB06" referredColumn="750EEFDA-3F2A-EEF0-236E-334EFA1041F8"/>
+</associations>
+</Column>
+<Column name="ID_LOCAL_SEGUINTE" id="D87442BE-18F7-0781-5AF4-939E2E7FCF20">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:15:29 UTC</createdTime>
+<comment>Identificador do local seguinte.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FB0F09A-CF31-C0F5-0EE0-8976D6236D72" referredColumn="750EEFDA-3F2A-EEF0-236E-334EFA1041F8"/>
+</associations>
+</Column>
+<Column name="LOG_MUDANCAS" id="39AC8B63-565C-D366-66D6-7EA291A9EF46">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:23:06 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06FB8318-324F-D229-B796-C63F9015786A" name="MUDANCAS_PK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:07:55 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F5719E7-C47D-A32B-0313-CB1F70811363"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="140BC2B6-ADE2-396C-5AE5-2B79A9BD315A" name="MUDANCAS_LOCAIS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:25:55 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="173DCB6E-2275-E45F-C817-4628724C274A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92BE727D-A4A7-996F-F683-E9D9E4A51154" name="MUDANCAS_LOCAIS_FKv2">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:26:17 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D87442BE-18F7-0781-5AF4-939E2E7FCF20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB71818C-A5BF-1185-C140-276F33FAA711" name="MUDANCAS_PALETES_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:26:44 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37324BA3-0165-B2DC-95CF-130517C3F2F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

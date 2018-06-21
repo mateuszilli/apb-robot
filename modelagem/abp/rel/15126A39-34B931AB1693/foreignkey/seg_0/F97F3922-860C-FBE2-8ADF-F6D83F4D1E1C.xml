@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F97F3922-860C-FBE2-8ADF-F6D83F4D1E1C" containerWithKeyObject="8B66D14F-57FB-B28E-596F-9F872E1F6F50" localFKIndex="8373B0CB-3923-123E-9027-E7C12DF6EA74" name="RESERVAS_PALETES_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 23:31:55 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<referredTableLongName>PALETES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>475FF0BF-FA47-AE74-B52D-4A3752CB7F05</referredTableID>
+<keyObject>86F6CF44-E0D3-C5F8-DF79-169D0FBC1432</keyObject>
+<referredKeyID>86F6CF44-E0D3-C5F8-DF79-169D0FBC1432</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PALETE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

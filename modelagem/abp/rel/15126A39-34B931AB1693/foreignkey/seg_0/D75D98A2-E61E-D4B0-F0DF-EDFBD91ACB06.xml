@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D75D98A2-E61E-D4B0-F0DF-EDFBD91ACB06" containerWithKeyObject="2666932C-6E9D-69B6-58B2-9CC8E60F7FDD" localFKIndex="140BC2B6-ADE2-396C-5AE5-2B79A9BD315A" name="MUDANCAS_LOCAIS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:25:55 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<referredTableLongName>LOCAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9AD88B4A-45B3-5882-508D-013320523D19</referredTableID>
+<keyObject>89951224-1CDB-D7F6-09CE-DC141E31EC32</keyObject>
+<referredKeyID>89951224-1CDB-D7F6-09CE-DC141E31EC32</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LOCAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

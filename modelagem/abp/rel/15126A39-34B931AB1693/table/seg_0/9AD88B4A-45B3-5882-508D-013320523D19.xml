@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AD88B4A-45B3-5882-508D-013320523D19" name="LOCAIS">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:24:43 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOCAL" id="750EEFDA-3F2A-EEF0-236E-334EFA1041F8">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:25:28 UTC</createdTime>
+<comment>Identificador da prateleira.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LINHA" id="DFDA44F1-D79E-AA3D-C05A-68E29B0A6E5B">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-20 22:30:00 UTC</createdTime>
+<comment>Identificador da linha.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="425BE0B1-8D52-4E3F-926D-230A69D2BBE6" referredColumn="6F3253BE-56C5-DA2E-A8C5-1BAF84856A85"/>
+</associations>
+</Column>
+<Column name="ORDEM_LOCAL" id="5F31C7AB-E030-9252-139E-9B725D58EAE1">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:33:15 UTC</createdTime>
+<comment>Ordem da prateleira.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_LOCAL" id="8344060E-8815-DE45-D888-1C5E7DEBA98B">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 23:15:41 UTC</createdTime>
+<comment>Tipo da prateleira.</comment>
+<commentInRDBMS>M =&gt; Manobra&lt;br/&gt;E =&gt; Espaco&lt;br/&gt;P =&gt; Permanencia</commentInRDBMS>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO_LOCAL" id="F943770B-9F64-47B3-7CEE-5EADD6B0B706">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:35:23 UTC</createdTime>
+<comment>Descrição da prateleira.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HASH_LOCAL" id="E71BB34D-57B3-2DE7-BA8F-B9BBCD3D4607">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:40:55 UTC</createdTime>
+<comment>Hash binario da prateleira.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89951224-1CDB-D7F6-09CE-DC141E31EC32" name="LOCAIS_PK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:25:28 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750EEFDA-3F2A-EEF0-236E-334EFA1041F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="767EDA48-BA86-23B0-BAC3-EBB789141D58" name="LOCAIS_LINHAS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:27:57 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFDA44F1-D79E-AA3D-C05A-68E29B0A6E5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

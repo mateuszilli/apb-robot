@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="475FF0BF-FA47-AE74-B52D-4A3752CB7F05" name="PALETES">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:44:27 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PALETE" id="D28ACA74-52E3-8128-30C9-C85E0E91C87E">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:45:07 UTC</createdTime>
+<comment>Identificador do palete.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO_PALETE" id="EA0F083A-F06C-935B-DDE8-4D23E5320F23">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:47:12 UTC</createdTime>
+<comment>Descrição do palete.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_VALIDADE_PALETE" id="CA92E531-EE67-B03C-602E-AF2A0E3E35B5">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:50:09 UTC</createdTime>
+<comment>Data e hora da válidade do palete.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86F6CF44-E0D3-C5F8-DF79-169D0FBC1432" name="PALETES_PK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:45:07 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D28ACA74-52E3-8128-30C9-C85E0E91C87E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

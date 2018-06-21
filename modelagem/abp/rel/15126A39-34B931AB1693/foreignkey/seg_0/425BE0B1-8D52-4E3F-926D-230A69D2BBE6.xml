@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="425BE0B1-8D52-4E3F-926D-230A69D2BBE6" containerWithKeyObject="9AD88B4A-45B3-5882-508D-013320523D19" localFKIndex="767EDA48-BA86-23B0-BAC3-EBB789141D58" name="LOCAIS_LINHAS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-15 22:27:57 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<referredTableLongName>LINHAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7B6FA989-2EDB-E724-9110-7A793D0587B4</referredTableID>
+<keyObject>713D65FC-45DF-39EE-F964-E97A62E19324</keyObject>
+<referredKeyID>713D65FC-45DF-39EE-F964-E97A62E19324</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LINHA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>6F3253BE-56C5-DA2E-A8C5-1BAF84856A85</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

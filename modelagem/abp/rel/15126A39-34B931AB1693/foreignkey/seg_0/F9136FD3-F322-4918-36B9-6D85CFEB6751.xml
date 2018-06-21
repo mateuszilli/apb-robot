@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F9136FD3-F322-4918-36B9-6D85CFEB6751" containerWithKeyObject="2666932C-6E9D-69B6-58B2-9CC8E60F7FDD" localFKIndex="FB71818C-A5BF-1185-C140-276F33FAA711" name="MUDANCAS_PALETES_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:26:44 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<referredTableLongName>PALETES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>475FF0BF-FA47-AE74-B52D-4A3752CB7F05</referredTableID>
+<keyObject>86F6CF44-E0D3-C5F8-DF79-169D0FBC1432</keyObject>
+<referredKeyID>86F6CF44-E0D3-C5F8-DF79-169D0FBC1432</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PALETE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
