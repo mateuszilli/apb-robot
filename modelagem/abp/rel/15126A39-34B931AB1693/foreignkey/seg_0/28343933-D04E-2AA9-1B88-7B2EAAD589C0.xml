@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="28343933-D04E-2AA9-1B88-7B2EAAD589C0" containerWithKeyObject="2666932C-6E9D-69B6-58B2-9CC8E60F7FDD" localFKIndex="177BD117-0AA8-2906-8914-11DD48624ACF" name="MUDANCAS_ROBOS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:51:56 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<referredTableLongName>ROBOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B46DF5F5-EF12-BE39-5B2E-A1F085E2B0B3</referredTableID>
+<keyObject>E7A0BBDF-8784-D211-014D-93E46FDA64BE</keyObject>
+<referredKeyID>E7A0BBDF-8784-D211-014D-93E46FDA64BE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ROBO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

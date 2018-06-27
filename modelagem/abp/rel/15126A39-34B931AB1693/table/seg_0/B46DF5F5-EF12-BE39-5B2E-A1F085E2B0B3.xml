@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B46DF5F5-EF12-BE39-5B2E-A1F085E2B0B3" name="ROBOS">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:47:19 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROBO" id="E0779CC4-B65F-E069-AED0-0D4C45E5C087">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:48:31 UTC</createdTime>
+<comment>Identificador do robo.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO_ROBO" id="B30B9D29-C875-5F3E-A9ED-0AE8F690C8DF">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:51:23 UTC</createdTime>
+<comment>Descrição do robo.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7A0BBDF-8784-D211-014D-93E46FDA64BE" name="ROBOS_PK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:48:31 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0779CC4-B65F-E069-AED0-0D4C45E5C087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
