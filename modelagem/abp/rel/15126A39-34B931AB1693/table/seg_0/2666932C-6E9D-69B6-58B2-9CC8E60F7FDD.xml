@@ -16,16 +16,34 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ID_PALETE" id="37324BA3-0165-B2DC-95CF-130517C3F2F1">
+<Column name="ID_ROBO" id="68F3BEC7-8710-1258-22A3-103A4BB25A87">
 <createdBy>mateus</createdBy>
-<createdTime>2018-06-21 16:14:03 UTC</createdTime>
+<createdTime>2018-06-27 21:48:54 UTC</createdTime>
+<comment>Identificador do robo.</comment>
 <ownerDesignName>abp</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="28343933-D04E-2AA9-1B88-7B2EAAD589C0" referredColumn="E0779CC4-B65F-E069-AED0-0D4C45E5C087"/>
+</associations>
+</Column>
+<Column name="ID_PALETE" id="37324BA3-0165-B2DC-95CF-130517C3F2F1">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-21 16:14:03 UTC</createdTime>
+<comment>Identificador do palete.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -40,6 +58,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -54,15 +73,31 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="1FB0F09A-CF31-C0F5-0EE0-8976D6236D72" referredColumn="750EEFDA-3F2A-EEF0-236E-334EFA1041F8"/>
 </associations>
 </Column>
-<Column name="LOG_MUDANCAS" id="39AC8B63-565C-D366-66D6-7EA291A9EF46">
+<Column name="STATUS_MUDANCAS" id="39AC8B63-565C-D366-66D6-7EA291A9EF46">
 <createdBy>mateus</createdBy>
 <createdTime>2018-06-21 16:23:06 UTC</createdTime>
+<comment>Status da mudança.</comment>
+<commentInRDBMS>NULL =&gt; Mudança não efetuada;&lt;br/&gt;S =&gt; Mudança efetuada com sucesso;&lt;br/&gt;E =&gt; Erro (Erro gravado no campo &quot;LOG_MUDANCA&quot;);</commentInRDBMS>
+<ownerDesignName>abp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOG_MUDANCA" id="F2AB19F3-5F67-0F0E-2F26-FA45219286E0">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:40:52 UTC</createdTime>
+<comment>Log da mudança. (Usar apenas para registrar mudanças com erros)</comment>
 <ownerDesignName>abp</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -70,6 +105,18 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100 CHAR</dataTypeSize>
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DH_MUDANCA" id="DF285A5D-0286-719A-91BC-1B3C939D71D3">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:41:59 UTC</createdTime>
+<comment>Data e hora em que foi solicitada a mudança.</comment>
+<ownerDesignName>abp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -113,6 +160,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="37324BA3-0165-B2DC-95CF-130517C3F2F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="177BD117-0AA8-2906-8914-11DD48624ACF" name="MUDANCAS_ROBOS_FK">
+<createdBy>mateus</createdBy>
+<createdTime>2018-06-27 21:51:56 UTC</createdTime>
+<ownerDesignName>abp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68F3BEC7-8710-1258-22A3-103A4BB25A87"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
