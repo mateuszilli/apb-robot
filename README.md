@@ -1,8 +1,6 @@
 # apb-robot
 
 
-@author: mateuszilli
-/banco_de_dados_1 
+/banco_de_dados_1 - @author mateuszilli
 
-@author: camilapiva
-/poo_2
+/poo_2 - @author camilapiva
